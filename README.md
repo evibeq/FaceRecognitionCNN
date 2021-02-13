@@ -2,7 +2,8 @@
 
 ## Face Detection
 
-Face Detection utilizzando VGGFace2:  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13gdTneEgbzn0SvvzntR7t2RDhKsvYPZW?usp=sharing)
+Face Detection utilizzando VGGFace2:  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13gdTneEgbzn0SvvzntR7t2RDhKsvYPZW?usp=sharing)
 
 ### VGGFace
 Il modello VGGFace, è stato descritto da Omkar Parkhi, nella tesi del 2015 intitolata [Deep Face Recognition](https://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf)
@@ -18,7 +19,8 @@ Due dei modelli addestrati su questo dataset, sono ResNet-50 e SqueezeNet-ResNet
 
 ## Face Recognition
 
-Face Recognition utilizzando MTCNN:  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hd7IoFsZBFw1uB98gu4IsFsUb5LBphsP?usp=sharing)
+Face Recognition utilizzando MTCNN:  
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hd7IoFsZBFw1uB98gu4IsFsUb5LBphsP?usp=sharing)
 
 ### MTCNN
 Il progetto [ipazc/MTCNN](https://github.com/ipazc/mtcnn) fornisce un'implementazione dell'architettura MTCNN utilizzando TensorFlow e OpenCV. I due principali benefici di questo progetto sono:
