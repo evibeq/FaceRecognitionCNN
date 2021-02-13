@@ -3,39 +3,7 @@ Face Detection:  [![Open In Colab](https://colab.research.google.com/assets/cola
 
 Face Recognition:  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1hd7IoFsZBFw1uB98gu4IsFsUb5LBphsP?usp=sharing)
 
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "name": "FaceRecognition.ipynb",
-      "provenance": [],
-      "collapsed_sections": [],
-      "authorship_tag": "ABX9TyNJ+pt5M0EGkBtLNRjv6vJ8",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/evibeq/FaceRecognitionCNN/blob/main/FaceRecognition.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "N-eC5ZNQKqtO"
-      },
-      "source": [
+
         "# VGGFace\r\n",
         "Il modello VGGFace, è stato descritto da Omkar Parkhi, nella tesi del 2015 intitolata \"[Deep Face Recognition](https://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf)\".  \r\n",
         "Una parte del documento era una descrizione di come sviluppare un dataset di addestramento molto ampio, necessario per addestrare i moderni sistemi di riconoscimento facciale basati su CNN, per competere con i grandi dataset utilizzati per addestrare i modelli di Facebook e Google.  \r\n",
@@ -46,42 +14,7 @@ Face Recognition:  [![Open In Colab](https://colab.research.google.com/assets/co
         "Descrivono VGGFace2 come un set di dati molto più ampio che hanno raccolto allo scopo di addestrare e valutare modelli di riconoscimento facciale ancora più efficaci.\r\n",
         "Il dataset contiene 3,31 milioni di immagini di 9131 soggetti, con una media di 362,6 immagini per ogni soggetto.  \r\n",
         "Due dei modelli addestrati su questo dataset, sono ResNet-50 e SqueezeNet-ResNet-50 (chiamato SE-ResNet-50 o SENet), e sono le variazioni di [questi modelli](https://github.com/ox-vgg/vgg_face2) che sono state rese disponibili dagli autori , insieme al codice associato.\r\n"
-      ]
-    },
-    {
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "name": "FaceDetection.ipynb",
-      "provenance": [],
-      "collapsed_sections": [],
-      "authorship_tag": "ABX9TyNhNJBSfK7+uqWU8AcQZxVI",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "accelerator": "GPU"
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/gist/evibeq/ea2fe3b80d1a0da64fef3acc5333d57b/facedetection.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "CqV1mDljY6z6"
-      },
-      "source": [
+    
         "Il progetto [ipazc/MTCNN](https://github.com/ipazc/mtcnn) fornisce un'implementazione dell'architettura MTCNN utilizzando TensorFlow e OpenCV. I due principali benefici di questo progetto sono:\r\n",
         "\r\n",
         "*   la possibilità di utilizzare un modello performante e pre-addestrato;\r\n",
@@ -101,5 +34,3 @@ Face Recognition:  [![Open In Colab](https://colab.research.google.com/assets/co
         "## 3.Output network (O-Net)\r\n",
         "Questo passaggio è simile alla R-Net, ma il suo obiettivo è di descrivere il viso più nel dettaglio individuando i 5 facial landmarks.  \r\n",
         "<img src='https://drive.google.com/uc?id=1nrOnIpqFCif5sI8VFZE8dm7wH2kghvh9'>"
-      ]
-    }
