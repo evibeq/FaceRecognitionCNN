@@ -31,16 +31,19 @@ Il progetto [ipazc/MTCNN](https://github.com/ipazc/mtcnn) fornisce un'implementa
 *   la possibilità di utilizzare un modello performante e pre-addestrato;
 *   la possibilità di installare il modello come una libreria pronta all'uso nel proprio codice.
 
-Tecnicamente MTCNN è composto da un prepassaggio e 3 CNN, non direttamente collegate tra di loro. Per prima cosa l'immagine viene ridimensionata a scale diverse per costruire una image pyramid, che sarà l'input della prima delle reti, dopodichè:
+Tecnicamente MTCNN è composto da un prepassaggio e 3 CNN, non direttamente collegate tra di loro. Per prima cosa l'immagine viene ridimensionata a scale diverse per costruire una image pyramid, che sarà l'input della prima delle reti, dopodichè le reti in ordine:
     
 ### 1. Proposal Network (P-Net)
 É una fully connected network (FCN). Meno profonda delle prossime CNN, viene utilizzata per ottenere finestre candidate a contenere volti.  
+
 <img src='https://drive.google.com/uc?id=1XQKluW0_5pru_-X80OJduz9_7kXbzjVg'>
     
 ### 2. Refine Network (R-Net)
 Tutte le finestre vengono inviate a questa CNN che riduce ulteriormente il numero di candidati a contenere un viso, esegue una bounding box regression e utilizza la non-maxiam suppression (NMS) per unire i candidati sovrapposti. L'ouput sarà la conferma della presenza di effetivo volto.  
+
 <img src='https://drive.google.com/uc?id=1ymIh--XX_fdvmclC10xLJIGAznb6xq4A'>
     
-## 3.Output network (O-Net)
+## 3. Output network (O-Net)
 Questo passaggio è simile alla R-Net, ma il suo obiettivo è di descrivere il viso più nel dettaglio individuando i 5 facial landmarks.  
+
 <img src='https://drive.google.com/uc?id=1nrOnIpqFCif5sI8VFZE8dm7wH2kghvh9'>
