@@ -7,17 +7,17 @@ Face Detection utilizzando VGGFace2:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13gdTneEgbzn0SvvzntR7t2RDhKsvYPZW?usp=sharing)
 
 ### VGGFace
-Il modello VGGFace, è stato descritto da Omkar Parkhi, nella tesi del 2015 intitolata [Deep Face Recognition](https://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf)
-Una parte del documento era una descrizione di come sviluppare un dataset di addestramento molto ampio, necessario per addestrare i moderni sistemi di riconoscimento facciale basati su CNN, per competere con i grandi dataset utilizzati per addestrare i modelli di Facebook e Google.
+Il modello VGGFace, è stato descritto da Omkar Parkhi, nella tesi del 2015 intitolata [Deep Face Recognition](https://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf).  
+Una parte del documento era una descrizione di come sviluppare un dataset di addestramento molto ampio, necessario per addestrare i moderni sistemi di riconoscimento facciale basati su CNN, per competere con i grandi dataset utilizzati per addestrare i modelli di Facebook e Google.  
 Per quanto riguarda la CNN di VGGFace in sé, l'architettura adottata la rende molto profonda, con ben 37 layer, divisi in blocchi di layer convoluzionali con kernel piccoli e attivazioni ReLU seguiti da layer di max pooling con, alla fine del classificatore layer full connected:  
 
 <img src='https://drive.google.com/uc?id=1ppG-bZ_032RiUqWH9IOSN3pRtO1iDO4g'>
 
 ### VGGFace2
-In una tesi del 2017 intitolata “[VGGFace2: A dataset for recognising faces across pose and age](https://www.robots.ox.ac.uk/~vgg/publications/2018/Cao18/cao18.pdf)”, Qiong Cao, del VGG, descrive un lavoro di miglioramento del precedente VGGFace.
+In una tesi del 2017 intitolata “[VGGFace2: A dataset for recognising faces across pose and age](https://www.robots.ox.ac.uk/~vgg/publications/2018/Cao18/cao18.pdf)”, Qiong Cao, del VGG, descrive un lavoro di miglioramento del precedente VGGFace.  
 Descrivono VGGFace2 come un set di dati molto più ampio che hanno raccolto allo scopo di addestrare e valutare modelli di riconoscimento facciale ancora più efficaci.
 Il dataset contiene 3,31 milioni di immagini di 9131 soggetti, con una media di 362,6 immagini per ogni soggetto.  
-Due dei modelli addestrati su questo dataset, sono ResNet-50 e SqueezeNet-ResNet-50 (chiamato SE-ResNet-50 o SENet), e sono le variazioni di [questi modelli](https://github.com/ox-vgg/vgg_face2) che sono state rese disponibili dagli autori , insieme al codice associato.
+Due dei modelli addestrati su questo dataset, sono ResNet-50 e SqueezeNet-ResNet-50 (chiamato SE-ResNet-50 o SENet), e sono le variazioni di [questi modelli](https://github.com/ox-vgg/vgg_face2) che sono state rese disponibili dagli autori , insieme al codice associato.  
 
 ## Face Recognition
 
