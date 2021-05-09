@@ -9,7 +9,7 @@ Face Detection utilizzando VGGFace2:
 ### VGGFace
 Il modello VGGFace, è stato descritto da Omkar Parkhi, nella tesi del 2015 intitolata [Deep Face Recognition](https://www.robots.ox.ac.uk/~vgg/publications/2015/Parkhi15/parkhi15.pdf).  
 Una parte del documento era una descrizione di come sviluppare un dataset di addestramento molto ampio, necessario per addestrare i moderni sistemi di riconoscimento facciale basati su CNN, per competere con i grandi dataset utilizzati per addestrare i modelli di Facebook e Google.  
-Per quanto riguarda la CNN di VGGFace in sé, l'architettura adottata la rende molto profonda, con ben 37 layer, divisi in blocchi di layer convoluzionali con kernel piccoli e attivazioni ReLU seguiti da layer di max pooling con, alla fine del classificatore layer full connected:  
+Per quanto riguarda la CNN di VGGFace in sé, l'architettura adottata la rende molto profonda, con ben 37 layer, divisi in blocchi di layer convoluzionali con kernel piccoli e attivazioni ReLU seguiti da layer di max pooling con, alla fine del classificatore, layer full connected:  
 
 <img src='https://drive.google.com/uc?id=1ppG-bZ_032RiUqWH9IOSN3pRtO1iDO4g'>
 
